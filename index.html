@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n-key="page_title">منصة تبادل المهارات - الرئيسية</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <i class="fas fa-sync-alt"></i> <span data-i18n-key="logo_text">تبادل المهارات</span>
+    </a>
+    <nav>
+      <ul id="navLinks">
+        <li>
+          <select class="language-select" id="languageSelect">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="side-cards">
+        <div class="stat-box">
+          <span data-i18n-key="registered_users">المستخدمون المسجلون</span> <br>
+          <div class="number" id="userCount">0</div>
+        </div>
+        <div class="link-box">
+          <span data-i18n-key="have_skill_q">هل لديك مهارة؟</span><br>
+          <a href="signup.html" data-i18n-key="signup_link">سجل الآن</a>
+        </div>
+      </div>
+
+      <div class="hero">
+        <h1 data-i18n-key="hero_title">اكتشف وشارك المهارات</h1>
+        <p data-i18n-key="hero_paragraph">
+          تواصل مع الأشخاص الذين يرغبون في التعلم والذين هم على استعداد للتعليم. انضم إلى مجتمعنا ونمِ معرفتك بمشاركة ما تعرفه وتعلم ما لا تعرفه.
+        </p>
+        <a href="search.html" class="cta-button" data-i18n-key="get_started_button">ابدأ الآن</a>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <h2 data-i18n-key="how_it_works_title">كيف تعمل المنصة</h2>
+      <div class="how-it-works-visual">
+          <img src="static/images/1.jpg" alt="Conceptual image showing tangled thoughts leading to a clear idea with a lightbulb." data-i18n-key="how_it_works_image_alt">
+          <p data-i18n-key="how_it_works_image_description">
+              من الأفكار المعقدة إلى الحلول الواضحة: رحلة التعلم والتبادل.
+          </p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/9068/9068848.png" alt="Search">
+          <p data-i18n-key="step1_text">1. ابحث عن المهارة التي تريد تعلمها</p>
+        </div>
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/9131/9131509.png" alt="Connect">
+          <p data-i18n-key="step2_text">2. تواصل مع شخص يقدمها</p>
+        </div>
+        <div class="step">
+          <img src="https://cdn-icons-png.flaticon.com/512/10787/10787880.png" alt="Exchange">
+          <p data-i18n-key="step3_text">3. تبادل المعرفة ونموا معاً</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2 data-i18n-key="testimonials_title">ماذا يقول مستخدمونا</h2>
+      <div class="testimonial-box">
+        <div class="testimonial-card">
+          <p data-i18n-key="testimonial1_text">منصة تبادل المهارات ساعدتني على بناء الثقة في التحدث باللغة الإسبانية من خلال ربطي بمتحدثين أصليين.</p>
+          <span class="user" data-i18n-key="testimonial1_user">— أثير ح.</span>
+        </div>
+        <div class="testimonial-card">
+          <p data-i18n-key="testimonial2_text">لقد تعلمت أخيراً التصميم الجرافيكي بينما كنت أعلم الآخرين العزف على البيانو. تطابق مثالي!</p>
+          <span class="user" data-i18n-key="testimonial2_user">— بدور ق.</span>
+        </div>
+      </div>
+    </section>
+    <section class="write-testimonial">
+      <h2 data-i18n-key="write_testimonial_title">اكتب شهادتك</h2>
+      <form id="testimonialForm" class="form-container" style="max-width:600px; margin:auto;">
+        <input type="text" id="testimonialName" placeholder="اسمك" required data-i18n-key="testimonial_name_placeholder">
+        <textarea id="testimonialMessage" placeholder="ملاحظاتك..." required data-i18n-key="testimonial_message_placeholder"></textarea>
+        <button type="submit" data-i18n-key="testimonial_submit_button">إرسال</button>
+        <p id="testimonialStatus"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        <span data-i18n-key="footer_copyright">© 2025 تبادل المهارات |</span>
+        <a href="about.html" data-i18n-key="footer_about">عن المنصة</a> |
+        <a href="contact.html" data-i18n-key="footer_contact">اتصل بنا</a> |
+        <a href="support.html" data-i18n-key="footer_support">الدعم</a>
+      </p>
+    </div>
+  </footer>
+
+  <div id="chatbot-container">
+    <div id="chatbot-box" class="chatbox hidden">
+      <div class="chatbox-header">
+        <div class="agent-info">
+          <i class="fas fa-headset avatar"></i>
+          <div>
+            <h3 data-i18n-key="chatbot_header_title">المساعدة والدعم</h3>
+            <span class="online-status"><span class="dot"></span> <span data-i18n-key="chatbot_online_status">متصل</span></span>
+          </div>
+        </div>
+        <button onclick="toggleChatbot(false)" class="close-btn">&times;</button>
+      </div>
+      <div class="chatbox-body" id="chat-content">
+        <p class="timestamp" data-i18n-key="chatbot_timestamp">اليوم الساعة 9:23 صباحاً</p>
+        <div class="chat-message" data-i18n-key="chatbot_initial_message">👋 مرحباً! أنا هنا للمساعدة. اختر خياراً أدناه:</div>
+        <div class="quick-replies">
+          <button onclick="sendReply('كيف أتواصل مع مستخدم؟')" data-i18n-key="chatbot_quick_reply1">كيف أتواصل مع مستخدم؟</button>
+          <button onclick="sendReply('نسيت كلمة المرور الخاصة بي.')" data-i18n-key="chatbot_quick_reply2">نسيت كلمة المرور الخاصة بي</button>
+          <button onclick="sendReply('أين يمكنني تعديل ملفي الشخصي؟')" data-i18n-key="chatbot_quick_reply3">أين يمكنني تعديل ملفي الشخصي؟</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="floating-button" onclick="toggleChatbot(true)">
+      <i class="fas fa-comment-dots"></i>
+    </button>
+  </div>
+
+  <script src="static/js/main.js"></script>
+
+  </body>
+</html>

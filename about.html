@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title data-i18n-key="page_title_about">About - Skill Swap</title>
+  <link rel="stylesheet" href="static/css/style.css" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <i class="fas fa-sync-alt"></i> <span data-i18n-key="logo_text">Skill Swap</span>
+    </a>
+    <nav>
+        <ul id="navLinks">
+             <li>
+              <select class="language-select" id="languageSelect">
+                <option value="ar">العربية</option>
+                <option value="en">English</option>
+              </select>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 data-i18n-key="about_title">About Skill Swap</h1>
+    <p data-i18n-key="about_paragraph1">
+      Skill Swap is a collaborative platform designed to help people share and exchange skills with each other.<br>
+      Whether you're a professional wanting to teach your expertise, or a learner eager to grow — Skill Swap connects you with the right people in your community.
+    </p>
+    <p data-i18n-key="about_paragraph2">
+      Our mission is to make learning more accessible, personalized, and community-driven — because everyone has something valuable to share, and something new to learn.
+    </p>
+
+    <section>
+      <h2 data-i18n-key="about_team_title">Meet Our Team</h2>
+      <div class="team-grid">
+        <a href="user.html?id=6818065a790f29cbc9002848" class="team-member">Aliyah Al Shammari</a>
+        <a href="user.html?id=6818065a790f29cbc9002849" class="team-member">Atheer Al Harbi</a>
+        <a href="user.html?id=6818065a790f29cbc900284a" class="team-member">Bdour Al Qurashi</a>
+        <a href="user.html?id=6818065a790f29cbc900284b" class="team-member">Shoug Al Shammari</a>
+        <a href="user.html?id=68180a6964a7cb816712773b" class="team-member">Raneem Al Harbi</a>
+        <a href="user.html?id=6818065a790f29cbc900284d" class="team-member">Randa Al Harthy</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        <span data-i18n-key="footer_copyright">© 2025 Skill Swap |</span>
+        <a href="about.html" data-i18n-key="footer_about">About</a> |
+        <a href="contact.html" data-i18n-key="footer_contact">Contact</a> |
+        <a href="support.html" data-i18n-key="footer_support">Support</a>
+      </p>
+    </div>
+  </footer>
+
+    <div id="chatbot-container">
+  <div id="chatbot-box" class="chatbox hidden">
+    <div class="chatbox-header">
+      <div class="agent-info">
+        <i class="fas fa-headset avatar"></i>
+        <div>
+          <h3 data-i18n-key="chatbot_header_title">Help & Support</h3>
+          <span class="online-status"><span class="dot"></span> <span data-i18n-key="chatbot_online_status">Online</span></span>
+        </div>
+      </div>
+      <button onclick="toggleChatbot(false)" class="close-btn">&times;</button>
+    </div>
+    <div class="chatbox-body" id="chat-content">
+      <p class="timestamp" data-i18n-key="chatbot_timestamp">Today at 9:23 AM</p>
+      <div class="chat-message" data-i18n-key="chatbot_initial_message">👋 Hello! I'm here to help. Choose an option below:</div>
+      <div class="quick-replies">
+        <button onclick="sendReply('How do I contact a user?')" data-i18n-key="chatbot_quick_reply1">How do I contact a user?</button>
+        <button onclick="sendReply('I forgot my password.')" data-i18n-key="chatbot_quick_reply2">I forgot my password</button>
+        <button onclick="sendReply('Where can I edit my profile?')" data-i18n-key="chatbot_quick_reply3">Where can I edit my profile?</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating-button" onclick="toggleChatbot(true)">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+</div>
+
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>

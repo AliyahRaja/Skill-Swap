@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n-key="page_title_signup">Sign Up - Skill Swap</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="index.html" class="logo">
+      <i class="fas fa-sync-alt"></i> <span data-i18n-key="logo_text">Skill Swap</span>
+    </a>
+    <nav>
+      <ul id="navLinks">
+        <li>
+          <select class="language-select" id="languageSelect">
+            <option value="ar">العربية</option>
+            <option value="en">English</option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 data-i18n-key="signup_title">Sign Up</h1>
+    <form id="signupForm" class="form-container">
+      <label for="name" data-i18n-key="signup_name_placeholder">Full Name</label>
+      <input type="text" id="name" placeholder="Full Name" required data-i18n-key="signup_name_placeholder">
+
+      <label for="email" data-i18n-key="signup_email_placeholder">Email</label>
+      <input type="email" id="email" placeholder="Email" required data-i18n-key="signup_email_placeholder">
+
+      <label for="password" data-i18n-key="signup_password_placeholder">Password</label>
+      <input type="password" id="password" placeholder="Password" required data-i18n-key="signup_password_placeholder">
+
+      <label for="offers" data-i18n-key="signup_offers_placeholder">Skills You Offer</label>
+      <input type="text" id="offers" placeholder="Skills You Offer" required data-i18n-key="signup_offers_placeholder">
+
+      <label for="wants" data-i18n-key="signup_wants_placeholder">Skills You Want to Learn</label>
+      <input type="text" id="wants" placeholder="Skills You Want to Learn" data-i18n-key="signup_wants_placeholder">
+
+      <button type="submit" data-i18n-key="signup_button">Create Account</button>
+      <p id="signupMessage"></p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>
+        <span data-i18n-key="footer_copyright">© 2025 Skill Swap |</span>
+        <a href="about.html" data-i18n-key="footer_about">About</a> |
+        <a href="contact.html" data-i18n-key="footer_contact">Contact</a> |
+        <a href="support.html" data-i18n-key="footer_support">Support</a>
+      </p>
+    </div>
+  </footer>
+
+    <div id="chatbot-container">
+  <div id="chatbot-box" class="chatbox hidden">
+    <div class="chatbox-header">
+      <div class="agent-info">
+        <i class="fas fa-headset avatar"></i>
+        <div>
+          <h3 data-i18n-key="chatbot_header_title">Help & Support</h3>
+          <span class="online-status"><span class="dot"></span> <span data-i18n-key="chatbot_online_status">Online</span></span>
+        </div>
+      </div>
+      <button onclick="toggleChatbot(false)" class="close-btn">&times;</button>
+    </div>
+    <div class="chatbox-body" id="chat-content">
+      <p class="timestamp" data-i18n-key="chatbot_timestamp">Today at 9:23 AM</p>
+      <div class="chat-message" data-i18n-key="chatbot_initial_message">👋 Hello! I'm here to help. Choose an option below:</div>
+      <div class="quick-replies">
+        <button onclick="sendReply('How do I contact a user?')" data-i18n-key="chatbot_quick_reply1">How do I contact a user?</button>
+        <button onclick="sendReply('I forgot my password.')" data-i18n-key="chatbot_quick_reply2">I forgot my password</button>
+        <button onclick="sendReply('Where can I edit my profile?')" data-i18n-key="chatbot_quick_reply3">Where can I edit my profile?</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="floating-button" onclick="toggleChatbot(true)">
+    <i class="fas fa-comment-dots"></i>
+  </button>
+</div>
+
+  <script src="static/js/main.js"></script>
+</body>
+</html>
